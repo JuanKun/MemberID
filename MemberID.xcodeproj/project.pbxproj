@@ -30,8 +30,8 @@
 		3BF9F44C240D18FC00EE8C4B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF9F44B240D18FC00EE8C4B /* HomeView.swift */; };
 		3BF9F44E240E026900EE8C4B /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF9F44D240E026900EE8C4B /* ActivityIndicator.swift */; };
 		3BF9F450240E02D100EE8C4B /* LoadingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF9F44F240E02D100EE8C4B /* LoadingRow.swift */; };
-		3BF9F452240E0A3600EE8C4B /* Extension++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF9F451240E0A3600EE8C4B /* Extension++.swift */; };
 		3BF9F454240E623000EE8C4B /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF9F453240E623000EE8C4B /* ImageDownloader.swift */; };
+		3BF9F456240E9A3F00EE8C4B /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF9F455240E9A3F00EE8C4B /* PlaceholderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,8 +81,8 @@
 		3BF9F44B240D18FC00EE8C4B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3BF9F44D240E026900EE8C4B /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		3BF9F44F240E02D100EE8C4B /* LoadingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingRow.swift; sourceTree = "<group>"; };
-		3BF9F451240E0A3600EE8C4B /* Extension++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension++.swift"; sourceTree = "<group>"; };
 		3BF9F453240E623000EE8C4B /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		3BF9F455240E9A3F00EE8C4B /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				3B73C92524094CD9006B0611 /* UserData.swift */,
+				3BF9F453240E623000EE8C4B /* ImageDownloader.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -211,6 +212,7 @@
 				3B73C93A240A54A8006B0611 /* FilterTypeHistoryView.swift */,
 				3B73C93C240A68C6006B0611 /* FilterPointHistoryView.swift */,
 				3B73C93E240A6DF1006B0611 /* ClearAllHistoryView.swift */,
+				3BF9F455240E9A3F00EE8C4B /* PlaceholderView.swift */,
 			);
 			path = SpecificView;
 			sourceTree = "<group>";
@@ -221,8 +223,6 @@
 				3B73C947240B50DB006B0611 /* RouterView.swift */,
 				3BF9F44D240E026900EE8C4B /* ActivityIndicator.swift */,
 				3BF9F44F240E02D100EE8C4B /* LoadingRow.swift */,
-				3BF9F451240E0A3600EE8C4B /* Extension++.swift */,
-				3BF9F453240E623000EE8C4B /* ImageDownloader.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -360,7 +360,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B73C92B240959AC006B0611 /* ListItem.swift in Sources */,
-				3BF9F452240E0A3600EE8C4B /* Extension++.swift in Sources */,
 				3B73C94A240B51FC006B0611 /* Data.swift in Sources */,
 				3B73C93D240A68C6006B0611 /* FilterPointHistoryView.swift in Sources */,
 				3BF9F44C240D18FC00EE8C4B /* HomeView.swift in Sources */,
@@ -377,6 +376,7 @@
 				3BF9F44E240E026900EE8C4B /* ActivityIndicator.swift in Sources */,
 				3B73C93B240A54A8006B0611 /* FilterTypeHistoryView.swift in Sources */,
 				3B73C945240A7B47006B0611 /* Awards.swift in Sources */,
+				3BF9F456240E9A3F00EE8C4B /* PlaceholderView.swift in Sources */,
 				3B73C9242409481D006B0611 /* LoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

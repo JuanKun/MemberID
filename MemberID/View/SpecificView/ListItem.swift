@@ -19,7 +19,7 @@ struct ListItem: View {
         VStack{
             ZStack{
 //                Rectangle().foregroundColor(.secondary).frame(width: screenWidth*0.9, height: screenHeight*0.2).cornerRadius(10)
-                AsyncImage(url: URL(string: url) ?? URL(string: "https://images.unsplash.com/photo-1582840996732-e9c89c6feb34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80")!, placeholder: Text("Loading..")).frame(width: screenWidth*0.9, height: screenHeight*0.2).cornerRadius(10)
+                AsyncImage(url: URL(string: url) ?? URL(string: "https://images.unsplash.com/photo-1582840996732-e9c89c6feb34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80")!, placeholder: LoadingRow(isLoading: true)).frame(width: screenWidth*0.9, height: screenHeight*0.2).cornerRadius(10)
                 VStack{
                     HStack{
                         Spacer().frame(width: screenWidth*0.6)

@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-
+import UIKit
 struct FilterTypeHistoryView: View {
     let screenWidth = UIScreen.main.bounds.width
     let screenHeight = UIScreen.main.bounds.height
@@ -19,7 +19,7 @@ struct FilterTypeHistoryView: View {
                 HStack{
                     Text("Type: ").font(.caption).fontWeight(.bold)
                     Spacer().frame(width: screenWidth*0.01)
-                    Text("\(self.users.historyType[0]), \(self.users.historyType[1]), \(self.users.historyType[2])").font(.caption)
+                    Text(self.users.historyType.joined(separator: ",")).font(.caption)
                     Image(systemName: "multiply.circle.fill").foregroundColor(.orange).onTapGesture {
                         self.users.historyType = []
                     }

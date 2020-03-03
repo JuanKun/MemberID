@@ -11,7 +11,7 @@ import Combine
 struct LoginView: View {
     @ObservedObject var binding = UserData()
     @EnvironmentObject var userss : UserData
-    @State var text : String = "Type the username"
+    @State var text : String = "Email address"
     @State var isEditing: Bool = false
     @State var isCorrect: Bool = true
     let screenWidth = UIScreen.main.bounds.width
@@ -36,9 +36,9 @@ struct LoginView: View {
             }).textFieldStyle(RoundedBorderTextFieldStyle()).frame(width: screenWidth*0.8)
             //MARK: Login Button
             VStack{
-                Text("Username did not exist!").foregroundColor(self.isCorrect ? .white : .red)
+                Text("Email address is not exist!").foregroundColor(self.isCorrect ? .white : .red)
                 Button(action: {
-                    if self.userss.emailTF.uppercased() == "JUANSYAH"{
+                    if self.userss.emailTF.uppercased() == "JUANSYAH.DEV@GMAIL.COM"{
                         self.userss.currentPage = "HomeView"
                         self.userss.emailTF = ""
                     }else {
@@ -47,7 +47,7 @@ struct LoginView: View {
                     }
                 }){
                     ZStack{
-                        Rectangle().frame(width: screenWidth*0.5, height: screenHeight*0.05).cornerRadius(10).foregroundColor(self.userss.emailTF.count != 1 ? .orange : .gray)
+                        Rectangle().frame(width: screenWidth*0.5, height: screenHeight*0.05).cornerRadius(10).foregroundColor(.orange)
                         Text("Sign In").font(.headline).foregroundColor(.white)
                     }
                 }

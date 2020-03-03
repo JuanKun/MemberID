@@ -101,6 +101,7 @@ struct FilterView: View {
             }.padding(.leading, screenWidth*0.04).padding(.trailing,screenWidth*0.04)
             Spacer()
             Button(action: {
+                self.awardss.historyType = []
                 let strat = ["Vouchers","Products","Gift"]
                 self.awardss.boolType = [self.awardss.isVoucherType,self.awardss.isProductType,self.awardss.isGiftType]
                 for i in 0..<self.awardss.boolType.count{
@@ -108,7 +109,6 @@ struct FilterView: View {
                         self.awardss.historyType.append("\(strat[i])")
                     }
                 }
-//                self.awardss.historyType = [self.awardss.isVoucherType ? "Vouchers" : "", self.awardss.isProductType ? "Products" : "", self.awardss.isGiftType ? "Gift" : ""]
                 self.awardss.historyPoint = self.awardss.maxPoint
                 self.awardss.currentPage = "HomeView"
             }){

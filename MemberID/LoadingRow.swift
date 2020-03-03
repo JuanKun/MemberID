@@ -12,10 +12,6 @@ struct LoadingRow : View {
     @State var isLoading: Bool
 
     var body: some View {
-        HStack {
-            Spacer()
-            ActivityIndicator(isLoading: isLoading)
-            Spacer()
-        }
+        ActivityIndicator(isLoading: isLoading)
     }
 }
