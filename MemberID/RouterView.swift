@@ -19,7 +19,7 @@ struct RouterView: View {
             } else if self.userData.currentPage == "HomeView"{
                 HomeView().transition(.move(edge: .trailing))
             } else if self.userData.currentPage == "FilterView" {
-                FilterView()
+                FilterView().transition(.move(edge: .trailing))
             }
         }
     }

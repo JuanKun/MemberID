@@ -30,15 +30,11 @@ struct SideMenuView: View {
             }.padding(.top, 30)
             HStack {
                 Image(systemName: "creditcard").foregroundColor(.secondary)
-                Text("Cards").fontWeight(.medium).foregroundColor(.secondary).onTapGesture {
-                    print("inactive")
-                }
+                Text("Cards").fontWeight(.medium).foregroundColor(.secondary)
             }.padding(.top, 30)
             HStack {
                 Image(systemName: "person").foregroundColor(.secondary)
-                Text("Profile").fontWeight(.medium).foregroundColor(.secondary).onTapGesture {
-                    print("inactive")
-                }
+                Text("Profile").fontWeight(.medium).foregroundColor(.secondary)
             }.padding(.top, 30)
             HStack {
                 Image(systemName: "hexagon")

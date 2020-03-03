@@ -13,11 +13,14 @@ struct PlaceholderView: View {
     let screenHeight = UIScreen.main.bounds.height
     var body: some View {
         VStack{
+            Spacer()
             ZStack{
                 Image(systemName: "star.fill").resizable().frame(width: screenWidth*0.5, height: screenWidth*0.5).foregroundColor(.orange)
-                Image(systemName: "multiply").resizable().frame(width: screenWidth*0.5, height: screenWidth*0.5)
+                Image(systemName: "multiply").resizable().frame(width: screenWidth*0.5, height: screenWidth*0.5).foregroundColor(.secondary)
             }
-            Text("No Awards Found").font(.headline).fontWeight(.bold).foregroundColor(.secondary)
+            
+            Text("No Awards Found").font(.headline).fontWeight(.bold).foregroundColor(.secondary).padding()
+            Spacer()
         }
     }
 }
