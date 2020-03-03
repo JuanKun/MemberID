@@ -1,0 +1,93 @@
+[
+    {
+        "id": 101,
+        "awardType": "Products",
+        "awardName": "Gift Card IDR 1.000.000",
+        "point": 20000,
+        "awardImg": ""
+    },
+    {
+        "id": 102,
+        "awardType": "Vouchers",
+        "awardName": "Gift Card IDR 1.000.000",
+        "point": 200000,
+        "awardImg": ""
+    },
+    {
+        "id": 103,
+        "awardType": "Vouchers",
+        "awardName": "Gift Card IDR 1.000.000",
+        "point": 50000,
+        "awardImg": ""
+    },
+    {
+        "id": 104,
+        "awardType": "Gift",
+        "awardName": "Gift Card IDR 1.000.000",
+        "point": 800000,
+        "awardImg": ""
+    },
+    {
+        "id": 105,
+        "awardType": "Products",
+        "awardName": "Gift Card IDR 1.000.000",
+        "point": 150000,
+        "awardImg": ""
+    },
+    {
+        "id": 106,
+        "awardType": "Vouchers",
+        "awardName": "Gift Card IDR 1.000.000",
+        "point": 350000,
+        "awardImg": ""
+    },
+    {
+        "id": 107,
+        "awardType": "Gift",
+        "awardName": "Gift Card IDR 900.000",
+        "point": 750000,
+        "awardImg": ""
+    },
+    {
+        "id": 108,
+        "awardType": "Products",
+        "awardName": "Gift Card IDR 1.000.000",
+        "point": 300000,
+        "awardImg": ""
+    },
+    {
+        "id": 109,
+        "awardType": "Products",
+        "awardName": "Gift Card IDR 1.000.000",
+        "point": 1000000,
+        "awardImg": ""
+    },
+    {
+        "id": 110,
+        "awardType": "Vouchers",
+        "awardName": "Voucher IDR 200.000",
+        "point": 10000,
+        "awardImg": ""
+    },
+    {
+        "id": 111,
+        "awardType": "Products",
+        "awardName": "Gift Card IDR 1.000.000",
+        "point": 650000,
+        "awardImg": ""
+    },
+    {
+        "id": 112,
+        "awardType": "Gift",
+        "awardName": "Gift Card IDR 500.000",
+        "point": 650000,
+        "awardImg": ""
+    },
+    {
+        "id": 113,
+        "awardType": "Products",
+        "awardName": "Gift Card IDR 1.000.000",
+        "point": 50000,
+        "awardImg": ""
+    },
+]
