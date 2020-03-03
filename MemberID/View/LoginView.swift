@@ -24,7 +24,7 @@ struct LoginView: View {
         VStack{
             Spacer()
             Image(systemName: "star.fill").resizable().frame(width: screenWidth*0.5, height: screenWidth*0.5, alignment: .center).foregroundColor(.orange)
-            Text("AWARDIN").font(.largeTitle).fontWeight(.bold).shadow(radius: 2).foregroundColor(.gray)
+            Text("AWARDINE").font(.largeTitle).fontWeight(.bold).shadow(radius: 2).foregroundColor(.gray)
             Spacer().frame(height: 8)
             Text("Enter your email address \n  to sign in and continue").font(.custom("SF", size: 18)).fontWeight(.heavy).frame(width: screenWidth*0.8, alignment: .center)
             
@@ -43,7 +43,7 @@ struct LoginView: View {
                         self.userss.emailTF = ""
                     }else {
                         self.userss.emailTF = ""
-                        self.isCorrect.toggle()
+                        self.isCorrect = false
                     }
                 }){
                     ZStack{

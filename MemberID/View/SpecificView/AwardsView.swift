@@ -20,7 +20,7 @@ struct AwardsView: View {
                 ForEach(users.awards.filter{ (check) in
                     check.point <= self.users.maxPoint
                 }){ award in
-                ListItem(awardType: "\(award.awardType)", awardName: "\(award.awardName)", point: award.point)
+                    ListItem(awardType: "\(award.awardType)", awardName: "\(award.awardName)", point: award.point, url: "\(award.awardImg)")
                 }
             }.padding(.top,16)
         }.onAppear{

@@ -10,7 +10,7 @@
         "id": 102,
         "awardType": "Vouchers",
         "awardName": "Gift Card IDR 1.000.000",
-        "point": 200000,
+        "point": 40000,
         "awardImg": ""
     },
     {
@@ -24,7 +24,7 @@
         "id": 104,
         "awardType": "Gift",
         "awardName": "Gift Card IDR 1.000.000",
-        "point": 800000,
+        "point": 35000,
         "awardImg": ""
     },
     {
@@ -53,20 +53,20 @@
         "awardType": "Products",
         "awardName": "Gift Card IDR 1.000.000",
         "point": 300000,
-        "awardImg": ""
+        "awardImg": "https://images.unsplash.com/photo-1582840996732-e9c89c6feb34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"
     },
     {
         "id": 109,
         "awardType": "Products",
         "awardName": "Gift Card IDR 1.000.000",
-        "point": 1000000,
+        "point": 900000,
         "awardImg": ""
     },
     {
         "id": 110,
         "awardType": "Vouchers",
         "awardName": "Voucher IDR 200.000",
-        "point": 10000,
+        "point": 50000,
         "awardImg": ""
     },
     {

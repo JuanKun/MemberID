@@ -43,6 +43,11 @@ final class UserData: ObservableObject {
             subject.send(self)
         }
     }
+    @Published var boolType : [Bool] = []{
+        didSet{
+            subject.send(self)
+        }
+    }
     @Published var historyPoint : Double = 0 {
         didSet{
             subject.send(self)

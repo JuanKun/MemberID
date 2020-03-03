@@ -66,6 +66,9 @@ struct FilterView: View {
                 HStack{
                     Image(systemName: "\(self.awardss.isAllType ? "checkmark.square.fill" : "square")").resizable().frame(width: screenWidth*0.06, height: screenWidth*0.06).foregroundColor(.orange).onTapGesture {
                         self.awardss.isAllType.toggle()
+                        self.awardss.isProductType.toggle()
+                        self.awardss.isVoucherType.toggle()
+                        self.awardss.isGiftType.toggle()
                     }
                     Text("All Type").frame(width: screenWidth*0.25, alignment: .leading).foregroundColor(.orange)
                     Spacer()
@@ -98,7 +101,14 @@ struct FilterView: View {
             }.padding(.leading, screenWidth*0.04).padding(.trailing,screenWidth*0.04)
             Spacer()
             Button(action: {
-                self.awardss.historyType = [self.awardss.isVoucherType ? "Vouchers" : "", self.awardss.isProductType ? "Products" : "", self.awardss.isGiftType ? "Gift" : ""]
+                let strat = ["Vouchers","Products","Gift"]
+                self.awardss.boolType = [self.awardss.isVoucherType,self.awardss.isProductType,self.awardss.isGiftType]
+                for i in 0..<self.awardss.boolType.count{
+                    if self.awardss.boolType[i] == true{
+                        self.awardss.historyType.append("\(strat[i])")
+                    }
+                }
+//                self.awardss.historyType = [self.awardss.isVoucherType ? "Vouchers" : "", self.awardss.isProductType ? "Products" : "", self.awardss.isGiftType ? "Gift" : ""]
                 self.awardss.historyPoint = self.awardss.maxPoint
                 self.awardss.currentPage = "HomeView"
             }){

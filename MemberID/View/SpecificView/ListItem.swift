@@ -14,10 +14,12 @@ struct ListItem: View {
     var awardType: String
     var awardName: String
     var point: Double
+    var url: String
     var body: some View {
-        VStack(alignment: .leading){
+        VStack{
             ZStack{
-                Rectangle().foregroundColor(.secondary).frame(width: screenWidth*0.9, height: screenHeight*0.2).cornerRadius(10)
+//                Rectangle().foregroundColor(.secondary).frame(width: screenWidth*0.9, height: screenHeight*0.2).cornerRadius(10)
+                AsyncImage(url: URL(string: url) ?? URL(string: "https://images.unsplash.com/photo-1582840996732-e9c89c6feb34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80")!, placeholder: Text("Loading..")).frame(width: screenWidth*0.9, height: screenHeight*0.2).cornerRadius(10)
                 VStack{
                     HStack{
                         Spacer().frame(width: screenWidth*0.6)
@@ -36,18 +38,17 @@ struct ListItem: View {
                     }
                     Spacer().frame(height: screenHeight*0.1)
                     HStack{
-                        Text(String(format: "%.0f Points", point)).frame(width: screenWidth*0.35, alignment: .leading)
+                        Text(String(format: "%.0f Points", point)).fontWeight(.semibold).frame(width: screenWidth*0.35, alignment: .leading).foregroundColor(.white)
+                        
                         Spacer().frame(width: screenWidth*0.5)
-                    }.padding(.bottom,8)
+                    }.padding(.bottom,CGFloat(8))
                 }
             }
-            Text("Gift Card IDR 1.000.000").fontWeight(.semibold)
+            
+            HStack{
+                Text("\(awardName)").fontWeight(.semibold)
+                Spacer()
+            }
         }.padding(.leading,8)
-    }
-}
-
-struct ListItem_Previews: PreviewProvider {
-    static var previews: some View {
-        ListItem(awardType: "Products", awardName: "Pointing", point: 100000)
     }
 }
